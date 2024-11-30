@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Karla';
+    font-weight: 400;
+    src: url(../src/assets/fonts/static/Karla-Regular.ttf) 
+        format('truetype');
+}
+@font-face {
+    font-family: 'Karla';
+    font-weight: 700;
+    src: url(../src/assets/fonts/static/Karla-Bold.ttf) 
+        format('truetype');
+}
+.contenedor {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}

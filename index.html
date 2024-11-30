@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="font-karla bg-green-lighter flex flex-col items-center justify-center min-h-[100vh] max-md:py-10">
+  <main class="contenedor bg-white p-5 rounded-xl">
+    <form id="formulario" novalidate>
+      <h1 class="text-3xl font-bold mb-7">Contact Us</h1>
+
+      <div class="md:flex md:gap-3">
+        <div class="mb-4 md:w-full">
+          <label for="firstName" class="text-grey-darker">First Name 
+            <span class="text-green-medium">*</span>
+          </label>
+          <input name="firstName" id="first-name" type="text" class="border-[1px] py-2 px-5 mt-2 w-full rounded-md border-grey-medium focus:outline-none hover:cursor-pointer hover:border-green-medium">
+        </div>
+  
+        <div class="mb-4 md:w-full">
+          <label for="lastName" class="text-grey-darker">Last Name 
+            <span class="text-green-medium">*</span>
+          </label>
+          <input name="lastName" id="last-name" type="text" class="border-[1px] py-2 px-5 mt-2 w-full rounded-md border-grey-medium focus:outline-none hover:cursor-pointer hover:border-green-medium">
+        </div>
+      </div>
+      
+      <div class="mb-4">
+        <label for="correo" class="text-grey-darker">Email Address 
+          <span class="text-green-medium">*</span>
+        </label>
+        <input name="correo" id="email" type="email" class="border-[1px] py-2 px-5 mt-2 w-full rounded-md border-grey-medium focus:outline-none hover:cursor-pointer hover:border-green-medium">
+      </div>
+
+      <div id="div-radios" class="mb-4">
+        <label class="text-grey-darker">Query Type
+          <span class="text-green-medium">*</span>
+        </label>
+
+        <div class="mt-3 md:flex md:gap-3">
+          <div class="btn-radio border-[1px] border-grey-medium py-2 px-5 rounded-md mb-3 md:mb-0 md:w-full">
+            <input type="radio" id="opcion1" name="seleccion" value="General Enquiry" class="accent-green-medium cursor-pointer">
+            <label for="opcion1" class="text-grey-darker cursor-pointer">General Enquiry</label>
+          </div>
+  
+          <div class="btn-radio border-[1px] border-grey-medium py-2 px-5 rounded-md md:w-full">
+            <input type="radio" id="opcion2" name="seleccion" value="Support Request" class="accent-green-medium cursor-pointer">
+            <label for="opcion2" class="text-grey-darker cursor-pointer">Support Request</label> 
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label for="message" class="text-grey-darker">Message 
+          <span class="text-green-medium">*</span>
+        </label>
+
+        <div >
+          <textarea name="message" id="message" rows="7" class="mt-2 w-full border-[1px] border-grey-medium rounded-md resize-none focus:outline-none py-2 px-5"></textarea>
+        </div>
+      </div>
+
+      <div class="my-7">
+        <input type="checkbox" name="consent" id="consent" class="accent-green-medium">
+        
+        <label for="consent" class="text-grey-darker hover:cursor-pointer">I consent to being contracted by the team 
+          <span class="text-green-medium">*</span>
+        </label>
+      </div>
+
+      <button type="submit" class="w-full text-white bg-green-medium py-3 rounded-lg hover:bg-green-dark transition-colors duration-200">Submit</button>
+    </form>
+  </main>
+  
+  <footer class="contenedor text-center"> 
+    <div class="attribution mt-3">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="font-bold">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/jorgecb10" class="font-bold">Jorge Carranza</a>.
+    </div>
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
