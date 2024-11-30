@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const radios = document.querySelectorAll('input[type="radio"]')
     const divRadios = document.getElementById('div-radios')
-    const inputFirstName = document.getElementById('first-name')
-    const inputLastName = document.getElementById('last-name')
-    const inputEmail = document.getElementById('email')
+    const inputFirstName = document.getElementById('firstName')
+    const inputLastName = document.getElementById('lastName')
+    const inputEmail = document.getElementById('correo')
     const inputMessage = document.getElementById('message')
     const inputConsent = document.getElementById('consent')
     const formulario = document.getElementById('formulario')
@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `
 
             body.insertBefore(success, contenedorAbuelo)
+            console.log(email);
 
             setTimeout(() => {
                 body.removeChild(success)
