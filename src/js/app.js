@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
             `
 
             body.insertBefore(success, contenedorAbuelo)
-            console.log(email);
 
             setTimeout(() => {
                 body.removeChild(success)
